@@ -1,0 +1,193 @@
+.mui-segmented-control.mui-scroll-wrapper {
+    height: 2.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #FF5A50;
+    border-bottom: 2px solid #FF5A50!important; 
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+    font-size: 0.8rem;
+	color: #6F758C;	
+	line-height: 2.2rem;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll {
+    width: auto;
+    height: 2.2rem; 
+    top: 0;
+    left: 0;
+    z-index: 8;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {  
+    padding: 0 0.8rem;
+}
+.mui-scroll-wrapper .move-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2.2rem;
+	width: 1.2rem;
+	z-index: 9;
+}
+.mui-slider-indicator .mui-icon {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0; 
+    text-align: center;
+    border: 1px solid #ddd; 
+    opacity: 0.8;
+	background: #FF5A50;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 2.2rem;
+}
+
+.my-wish-list{
+	background: #FFFFFF;
+	box-shadow: 0 4px 16px 0 rgba(250,39,26,0.04);
+	border-radius: 8px;
+	padding: 0.5rem;
+	margin-bottom: 0.6rem;
+	position: relative;
+}
+.my-wish-list .my-comment-text{
+	font-size: 0.9rem;
+	color: #18001E;
+	line-height: 2rem;
+	padding-right: 1rem;
+	position: relative;
+}
+
+.my-wish-list .weidu:after{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -4px;
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FF5A50;
+}
+.my-wish-list.weidu:after{
+	position: absolute;
+	right: 0.6rem;
+	top: 50%;
+	margin-top: -4px;
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FF5A50;
+}
+.my-wish-list.yidu{
+	opacity: 0.6;
+}
+.my-comment-text.yidu{
+	color: #A8ADC0;
+}
+.my-comment-text .comment-user{
+	color: #A8ADC0;
+}
+.my-wish-info{
+	color: #A8ADC0;
+	font-size: 0.7rem;
+}
+.my-wish-info .iconfont{
+	font-size: 0.7rem;
+	display: inline-block;
+	margin-right: 0.3rem;
+}
+.my-wish-info span.address{
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+.my-wish-info .weirenling{
+	color: #FF5A50;
+}
+.my-wish-info .shenhezhong{
+	color: #67B9FF;
+}
+.go-to-comment-btn{
+	color: #FF7169;
+	padding: 0.1rem 0.35rem;
+	border: 1px solid #FF7169;
+	border-radius: 4px;
+	margin-right: 0.2rem;
+}
+.my-shoucang-yirenling,.my-shoucang-yiwancheng,.my-shoucang-yishixiao{
+	display: none;
+}
+img.honor{
+	width: 2.6rem;
+	margin-right: 1rem;
+}
+.certificate-num{
+	font-size: 0.8rem;
+	color: #283039;
+	line-height: 1.4rem;
+}
+.certificate-img img{
+	width: 100%;
+	height: auto;
+}
+.honor-comment{
+	padding: 1rem 0.6rem 0;
+}
+.honor-comment-text{
+	font-size: 0.8rem;
+	color: #6D738B;
+	text-align: justify;
+	line-height: 1.5rem;
+	margin: 1rem 0 1.2rem;
+}
+.honor-comment-footer{
+	font-size: 0.7rem;
+	color: #6D738B;
+	line-height: 1.2rem;
+}
+.no-honor p{
+	text-align: center;
+	font-size: 0.7rem;
+	color: #A8ADC0;
+}
+.no-honor img{
+	display: block;
+	width: 8rem;
+	margin: 3rem auto 1rem;
+}
+#my-wish-classify{
+	position: absolute;
+	top: 2.3rem;
+	left: 0;
+	width: 100%;
+	overflow-y: scroll;
+}
+/*.mui-popup-buttons {
+	display: block;
+	height: auto;
+	font-weight: 400;
+}
+.mui-popup-button:first-child {
+    border-radius: 0;
+}
+.mui-popup-button:first-child:after{
+	top: auto;
+    bottom: 0;
+    left: 0;
+ 	width: 100%;
+ 	height: 1px;
+ 	-webkit-transform: scaleX(1); 
+     transform: scaleX(1); 
+    background-color: rgba(0,0,0,.1);
+}
+.mui-popup-button.mui-popup-button-bold {
+     font-weight: 400; 
+}*/

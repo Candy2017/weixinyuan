@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="微心愿">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>我的心愿</title>
+
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<!--<link rel="stylesheet" href="css/my-wish.css" />-->
+
+	</head>
+
+	<body class="index-bg">
+		<section class="main-wrap resolve-fix">
+			<div class="wish-content">
+				<div class="wish-content-wrap">
+
+					<div class="mui-row">
+						<div class="mui-col-sm-9 mui-col-xs-9 over-hidden">
+							<h3 class="item-list-title"><span class="classify travel">旅游</span>十一国庆节组团游华山</h3>
+						</div>
+						<div class="mui-col-sm-3 mui-col-xs-3 mui-text-right">
+							<span class="my-wish-state state-weirenling">未认领</span>
+						</div>
+					</div>
+
+					<div class="item-list-info-address">
+						<i class="iconfont icon-dizhi1 "></i><span class="address">安图新村居委会</span>
+						<i class="iconfont"></i><span class="time">10天12小时08分</span>
+					</div>
+
+					<div class="my-wish-all-detail">
+						由我自发的十一中老年人组团游华山还差1个名额， 想出游的可以联系我，可以带家属。团里的朋友都是附近小区的，一起出游过好几次了，相处和睦，欢迎你加入我们。
+					</div>
+
+					<div class="my-wish-publish-time">
+						<div class="pub-time">
+							发布于<span>2017年5月30 20:30</span>
+						</div>
+						<div class="pub-time">
+							更新于<span>2017年5月30 20:30</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="wish-content">
+				<div class="comment-title mui-clearfix">
+					<div class="mui-pull-left comment-title-left">评论</div>
+					<div class="mui-pull-right comment-title-right" id="public-comment"><i class="iconfont icon-bianji"></i>发表评论</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-list">
+						<div class="comment-head mui-clearfix">
+							<img src="img/user.jpg" class="mui-pull-left">
+							<div class="comment-user-name mui-pull-left">Janet Ellis</div>
+							<div class="comment-public-time mui-pull-right">
+								2017年5月30日 22:31
+							</div>
+						</div>
+						<div class="comment-text">
+							你好问下具体会去多少天旅行， 行程安排有哪些，这个出行费用怎么算？
+						</div>
+						<div class="comment-bottom mui-text-right">
+							<a href="#" class="r-c-btn cancel-comment">删除</a>
+							<a href="#" class="r-c-btn reply-comment" >回复</a>
+						</div>
+					</div>
+					<div class="comment-list">
+						<div class="comment-head mui-clearfix">
+							<img src="img/user.jpg" class="mui-pull-left">
+							<div class="comment-user-name mui-pull-left">倪春花</div>
+							<div class="comment-public-time mui-pull-right">
+								2017年5月30日 22:31
+							</div>
+						</div>
+						<div class="comment-text">
+							<span>回复<i class="replyto">Janet Ellis</i>:</span><span class="text-indent">12人左右</span>
+						</div>
+						<div class="comment-bottom mui-text-right">
+							<a href="#" class="r-c-btn" id="reply-comment">回复</a>
+						</div>
+					</div>
+				</div>
+		</section>
+		<footer class="mui-bar mui-bar-tab mui-bar-operate-wish">
+			<div class="mui-row mui-text-center">
+				<div class="mui-col-xs-6 cancel-my-wish" id="cancel-my-wish">
+					取消心愿
+				</div>
+				<div class="mui-col-xs-6 top-my-wish" id="top-my-wish">
+					置顶心愿
+				</div>
+			</div>
+		</footer>
+
+		<!--评论框-->
+		<div class="comment-textbox">
+			<div class="edit-area">
+				<textarea name="comment-textbox" class="conmment-textarea" autofocus="true"></textarea>
+				<div class="mui-clearfix">
+					<div class="mui-pull-left">
+						<a href="#" class="comment-box-btn-cancel" id="comment-canncel">取消</a>
+					</div>
+					<div class="mui-pull-right">
+						<a href="#" class="comment-box-btn-sure" id="comment-sure">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			//取消心愿
+			mui(".mui-bar-operate-wish").on("tap", "#cancel-my-wish", function(e) {
+				var btnArray = ['取消', '确认'];
+				mui.confirm('您确定取消本次心愿吗？', '删除心愿', btnArray, function(e) {
+					if(e.index == 1) {
+						//确认按钮 将取消后的心愿会保存到已失效心愿中
+
+					} 
+				})
+
+			});
+			//置顶心愿
+			mui(".mui-bar-operate-wish").on("tap", "#top-my-wish", function(e) {
+				//置顶...
+				mui.toast('置顶成功！');
+			});
+/*
+			//评论框
+			document.getElementById("public-comment").addEventListener('tap', function() {
+				$('.comment-textbox').show();
+			})
+			document.getElementById("comment-canncel").addEventListener('tap', function() {
+				$('.comment-textbox').hide();
+			})*/
+		</script>
+	</body>
+
+</html>

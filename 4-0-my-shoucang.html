@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="微心愿">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>我的收藏</title>
+
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/my-wish.css" />
+
+	</head>
+
+	<body class="index-bg">
+		<ul class="mui-bar mui-bar-nav mui-clearfix my-shoucang-nav">
+			<li class="active">未认领</li>
+			<li>已认领</li>
+			<li>已完成</li>
+			<li>已失效</li>
+		</ul>
+
+		<section class="main-wrap margin_t44">
+			<!--未认领-->
+			<div class="my-shoucang-item my-shoucang-weirenling">
+				<div class="my-wish-list">
+					<div>
+						<a href="4-1-my-shoucang-weirenling.html">
+							<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+						</a>
+					</div>
+
+					<div class="my-wish-info">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+						<i class="iconfont icon-shijian"></i><span class="time">10天12小时08分</span>
+					</div>
+				</div>
+			</div>
+
+			<!--已认领-->
+			<div class="my-shoucang-item my-shoucang-yirenling">
+				<div class="my-wish-list">
+					<a href="4-2-my-shoucang-yirenling.html">
+						<h3 class="item-list-title"><span class="classify second-hand">二手</span>闲置烤箱一个九成新，需要的亲请联系</h3>
+					</a>
+					<div class=" my-wish-info ">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+			</div>
+
+			<!--已完成-->
+			<div class="my-shoucang-item my-shoucang-yiwancheng">
+				<div class="my-wish-list">
+					<a href="4-3-my-shoucang-yiwancheng.html">
+						<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+					</a>
+					<div class="my-wish-info ">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+			</div>
+
+			<!--已失效-->
+			<div class="my-shoucang-item my-shoucang-yishixiao">
+				<div class="my-wish-list">
+					<a href="4-4-my-shoucang-yishixiao.html">
+						<h3 class="item-list-title"><span class="classify travel">旅游</span>出去旅游，寄养一只雪纳瑞两周</h3>
+					</a>
+					<div class="mui-clearfix my-wish-info">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+
+			// 点击导航标签 显示对应内容
+			mui(".my-shoucang-nav").on("tap", "li", function(e) {
+				var _index = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active')
+				$('.my-shoucang-item').eq(_index).show().siblings().hide();
+			});
+			
+		</script>
+	</body>
+
+</html>

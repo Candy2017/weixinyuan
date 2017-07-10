@@ -1,0 +1,67 @@
+
+header img{
+	width: 100%;
+}
+.nav-li{
+	font-size: 0.9rem;
+	color: #6F758C;
+	line-height: 1rem;
+	width: 50%;
+	position: relative;
+}
+.nav-li select{
+	padding: 0;
+	margin: 0;
+	position: absolute;  
+    left: 0px;  
+    top: 0px;  
+    width: 100%;   
+    opacity: 0;  
+}
+.index-nav{
+	padding: 10px 0;
+	background: #FFFFFF;
+}
+.index-nav .split{
+	border-right: 1px solid #A5A9B8;;
+}
+.nav-li.active{
+	color: #FF5A50;
+}
+.nav-li.active:after{
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	border-bottom: 2px solid #FF5A50;
+	width: 100%;
+	height: 1px;
+}
+.section-wrap{
+	padding: 0 2.5%;
+}
+.item-list{
+	background: #FFFFFF;
+	box-shadow: 0 4px 16px 0 rgba(250,39,26,0.04);
+	border-radius: 8px;
+	padding: 0.5rem;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.fix{
+	position: fixed;
+	right: 1rem;
+	bottom: 2rem;
+	width: 13%;
+}
+.fix img{
+	width: 100%;
+}
+#accout{
+	margin-bottom: 0.5rem;
+}
+
+.my-help-yiwancheng{
+	display: none;
+}

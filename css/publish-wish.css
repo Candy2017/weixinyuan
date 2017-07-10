@@ -1,0 +1,36 @@
+.publish-title{
+	/*padding-left: 1rem;*/
+}
+.publish-title:before{
+	content: "";
+	display: inline-block;
+	border-left: 3px solid #FF5A50;
+	width: 3px;
+	height: .8rem;
+	/*float: left;*/
+	/*left: 0;*/
+	
+}
+#wish-title{
+	font-size: 0.8rem;
+	color: #283039;
+	line-height: 1.2rem;
+	padding: 0 0.3rem;
+	margin: 0;
+	width: 96%;
+	display: inline-block;
+	border: none;
+}
+.wish-content textarea{
+	margin: 0;
+	font-size: 0.7rem;
+	color: #6D738B;
+	line-height: 1.2rem;
+	height: 8rem;
+	border: none;
+	border-top: 1px solid #E5E5E5;
+	border-radius: 0;
+	/*display: block;*/
+}
+
+

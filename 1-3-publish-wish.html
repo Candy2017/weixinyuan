@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="微心愿">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>发布心愿</title>
+
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/publish-wish.css" />
+
+	</head>
+
+	<body class="index-bg">
+
+		<section class="main-wrap">
+			<div class="wish-content">
+				<div class="publish-title">
+					<input type="text" name="wish-title" id="wish-title" value="" placeholder="请输入标题，不得超过16个字" />
+				</div>
+				<textarea name="wish-content" id="wish-describe" placeholder="请输入心愿描述，不得超过100个字"></textarea>
+			</div>
+			<div class="wish-content">
+				<div class="wish-content-wrap">
+					<div class="organiser-info-row">
+						<label>联系人</label><input type="text" id="organiser-name" placeholder="请输入联系人">
+					</div>
+					<div class="organiser-info-row">
+						<label>性别</label>
+						<select id="organiser-sex">
+							<option value="0" selected="selected">男</option>
+							<option value="1">女</option>
+						</select>
+					</div>
+					<div class="organiser-info-row">
+						<label>年龄</label><input type="number" id="organiser-age" placeholder="请输入年龄">
+					</div>
+					<div class="organiser-info-row">
+						<label>电话</label><input type="number" id="organiser-phone" placeholder="请输入电话号码">
+					</div>
+					<div class="organiser-info-row">
+						<label>居委会</label><input type="text" id="organiser-address" placeholder="请输入联系人所在居委会">
+					</div>
+				</div>
+			</div>
+			<div class="tips">
+				提交成功后，工作人员会在24小时进行审核
+			</div>
+			<button type="button" class="mui-btn btn-block " id="publish-wish">提交</button>
+		</section>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			
+			//提交按钮
+			document.getElementById("publish-wish").addEventListener('tap', function() {
+				var title = $('#wish-title').val().trim();
+				var describe = $('#wish-describe').val().trim();
+				var namestr = $('#organiser-name').val().trim();
+				var age = $('#organiser-age').val().trim();
+				var phone = $('#organiser-phone').val().trim();
+				var address = $('#organiser-address').val().trim();
+				if(title==""){
+					mui.toast('标题不能为空！');
+					return false;
+				}else if(describe==""){
+					mui.toast('心愿描述不能为空！');
+					return false;
+				}else if(namestr == "") {
+					mui.toast('姓名不能为空！');
+					return false;
+				} else if(age == "") {
+					mui.toast('年龄不能为空！');
+					return false;
+				} else if(!checkMobile()) {
+					mui.toast('手机号码有误！');
+					return false;
+				} else if(address == "") {
+					mui.toast('居委会名称不能为空！');
+					return false;
+				} else {
+					mu.toast('提交成功！');
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

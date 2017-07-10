@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="微心愿">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>我帮助的</title>
+
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+
+	<body class="index-bg">
+		<nav class="index-nav mui-clearfix mui-text-center ">
+			<li class="mui-pull-left nav-li active split">
+				<span>已认领</span>
+			</li>
+			<li class="mui-pull-left nav-li">
+				<span>已完成</span>
+			</li>
+		</nav>
+		<section class="section-wrap">
+
+			<!--已认领-->
+			<div class="my-help-yirenling">
+				<div class="item-list">
+					<a href="3-1-my-help-yirenlilng.html">
+						<h3 class="item-list-title"><span class="classify second-hand">二手</span>闲置烤箱一个九成新，需要的亲请联系</h3>
+					</a>
+					<div class="item-list-info">
+						<i class="iconfont icon-dizhi1 item-list-icon"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+				<div class="item-list">
+					<a href="3-1-my-help-yirenlilng.html">
+						<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+					</a>
+
+					<div class="item-list-info">
+						<i class="iconfont icon-dizhi1 item-list-icon"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+			</div>
+
+			<!--已完成-->
+			<div class="my-help-yiwancheng">
+				<div class="item-list">
+					<a href="2-8-my-wish-yiwancheng.html">
+						<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+					</a>
+
+					<div class="item-list-info">
+						<i class="iconfont icon-dizhi1 item-list-icon"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+				<div class="item-list">
+					<a href="2-8-my-wish-yiwancheng.html">
+						<h3 class="item-list-title"><span class="classify travel">旅游</span>悠坐摇橹船嗨玩皮划艇，挑战任务寻美食</h3>
+					</a>
+					<div class="item-list-info">
+						<i class="iconfont icon-dizhi1 item-list-icon"></i><span class="address">安图新村居委会</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui(".index-nav").on("tap", ".nav-li", function(e) {
+				var _index = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+				if(_index == 1) {
+					$('.my-help-yiwancheng').show().siblings().hide();
+				} else {
+					$('.my-help-yirenling').show().siblings().hide();
+				}
+			});
+		</script>
+	</body>
+
+</html>

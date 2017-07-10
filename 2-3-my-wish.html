@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="微心愿">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>我的心愿</title>
+
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/my-wish.css" />
+
+	</head>
+
+	<body class="index-bg">
+		<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			<div class="mui-scroll">
+				<a class="mui-control-item mui-active" href="#" data-wid="my-wish-list">
+					全部
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-weirenling">
+					未认领
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-yirenling">
+					已认领
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-yiwancheng">
+					已完成
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-yishixiao">
+					已失效
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-shenhezhong">
+					审核中
+				</a>
+				<a class="mui-control-item" href="#" data-wid="my-wish-weitongguo">
+					未通过
+				</a>
+			</div>
+			<div class="move-right" id="move-right">
+				<i class="mui-icon mui-icon-arrowright"></i>
+			</div>
+		</div>
+
+		<section class="main-wrap" id="my-wish-classify">
+			<!--未认领-->
+			<div class="my-wish-list my-wish-weirenling">
+				<div>
+					<a href="2-6-my-wish-weirenling.html">
+						<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+					</a>
+				</div>
+
+				<div class="mui-clearfix my-wish-info">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+						<i class="iconfont icon-shijian"></i><span class="time">10天12小时08分</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="weirenling">未认领</span>
+					</div>
+				</div>
+			</div>
+			<!--已认领-->
+			<div class="my-wish-list my-wish-yirenling">
+				<a href="2-7-my-wish-yirenling.html">
+					<h3 class="item-list-title"><span class="classify second-hand">二手</span>闲置烤箱一个九成新，需要的亲请联系</h3>
+				</a>
+				<div class="mui-clearfix my-wish-info ">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="yirenling">已认领</span>
+					</div>
+				</div>
+			</div>
+			<!--已完成-->
+			<div class="my-wish-list my-wish-yiwancheng">
+				<a href="2-8-my-wish-yiwancheng.html">
+					<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+				</a>
+				<div class="mui-clearfix my-wish-info ">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="go-to-comment-btn">去评价</span>
+						<span class="my-wish-yiwancheng">已完成</span>
+					</div>
+				</div>
+			</div>
+			<!--未通过-->
+			<div class="my-wish-list my-wish-weitongguo">
+				<a href="2-5-my-wish-weitongguo.html">
+					<h3 class="item-list-title"><span class="classify pet">萌宠</span>出去旅游，寄养一只雪纳瑞一周</h3>
+				</a>
+				<div class="mui-clearfix my-wish-info">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="weitongguo">未通过</span>
+					</div>
+				</div>
+			</div>
+			<!--审核中-->
+			<div class="my-wish-list my-wish-shenhezhong">
+				<a href="2-4-my-wish-shenhezhong.html">
+					<h3 class="item-list-title"><span class="classify travel">旅游</span>出去旅游，寄养一只雪纳瑞一周</h3>
+				</a>
+				<div class="mui-clearfix my-wish-info">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="shenhezhong">审核中</span>
+					</div>
+				</div>
+			</div>
+			<!--已失效-->
+			<div class="my-wish-list my-wish-yishixiao">
+				<a href="2-9-my-wish-yishixiao.html">
+					<h3 class="item-list-title"><span class="classify travel">旅游</span>出去旅游，寄养一只雪纳瑞一周</h3>
+				</a>
+				<div class="mui-clearfix my-wish-info">
+					<div class="mui-pull-left">
+						<i class="iconfont icon-dizhi1"></i><span class="address">安图新村居委会</span>
+					</div>
+					<div class="mui-pull-right">
+						<span class="my-wish-yishixiao">已失效</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+
+			//点击向右箭头 移动到最右边
+			document.getElementById("move-right").addEventListener('tap', function() {
+				var win_w = $(window).width();
+				var x = $('.mui-scroll').width();
+				var y = -(x - win_w);
+
+				$('.mui-scroll').css({
+					'transform': 'translateX(' + y + 'px)',
+					'transition': 'all 0.2s ease-in-out'
+				})
+			})
+
+			// 点击导航标签 显示对应内容
+			mui(".mui-scroll").on("tap", ".mui-control-item", function(e) {
+				var wid = this.getAttribute("data-wid");
+				if(wid == 'my-wish-list') {
+					$(".my-wish-list").show();
+				} else {
+					$(".my-wish-list").hide();
+					$("#my-wish-classify").find('.' + wid).show()
+				}
+			});
+
+			//评价弹框
+			mui(".my-wish-list").on("tap", ".go-to-comment-btn", function(e) {
+				dialogStyle();
+				var btnArray = ['满意', '不满意'];
+				mui.confirm('对此服务满意吗？', '服务评价', btnArray, function(e) {
+					if(e.index == 1) {
+						//。。。
+
+					} else {
+
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>
